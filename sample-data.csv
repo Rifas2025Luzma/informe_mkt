@@ -1,0 +1,21 @@
+fecha,plataforma,nombre_campana,tipo_campana,inversion,impresiones,clicks,conversiones,alcance,frecuencia,cpm,cpc,ctr,roas
+2024-01-01,Meta Ads,Campaña Navidad 2024,Conversiones,1500.00,45000,1200,85,35000,1.3,33.33,1.25,2.67,4.25
+2024-01-01,Google Ads,Black Friday Ofertas,Shopping,2200.00,67000,1800,120,55000,1.2,32.84,1.22,2.69,3.85
+2024-01-02,Meta Ads,Retargeting Enero,Retargeting,800.00,25000,750,45,20000,1.25,32.00,1.07,3.00,3.50
+2024-01-02,Google Ads,Búsqueda Productos,Search,1200.00,35000,980,65,28000,1.25,34.29,1.22,2.80,3.25
+2024-01-03,Meta Ads,Prospección Nuevos,Prospección,1800.00,55000,1400,95,45000,1.22,32.73,1.29,2.55,4.10
+2024-01-03,Google Ads,Display Network,Display,900.00,78000,890,35,65000,1.20,11.54,1.01,1.14,2.80
+2024-01-04,Meta Ads,Video Engagement,Video,1100.00,42000,980,55,35000,1.20,26.19,1.12,2.33,3.75
+2024-01-04,Google Ads,YouTube Ads,Video,1600.00,89000,1200,78,72000,1.24,17.98,1.33,1.35,3.90
+2024-01-05,Meta Ads,Lookalike Audience,Prospección,2000.00,58000,1650,110,48000,1.21,34.48,1.21,2.84,4.50
+2024-01-05,Google Ads,Smart Shopping,Shopping,1400.00,45000,1100,85,38000,1.18,31.11,1.27,2.44,4.20
+2024-01-06,Meta Ads,Intereses Específicos,Intereses,950.00,32000,850,48,26000,1.23,29.69,1.12,2.66,3.60
+2024-01-06,Google Ads,Búsqueda Marca,Search,750.00,18000,650,55,15000,1.20,41.67,1.15,3.61,5.20
+2024-01-07,Meta Ads,Carousel Products,Catálogo,1300.00,48000,1250,78,40000,1.20,27.08,1.04,2.60,4.00
+2024-01-07,Google Ads,Performance Max,Performance Max,1800.00,65000,1400,95,52000,1.25,27.69,1.29,2.15,3.95
+2024-01-08,Meta Ads,Stories Ads,Stories,850.00,35000,780,42,28000,1.25,24.29,1.09,2.23,3.45
+2024-01-08,Google Ads,Local Campaigns,Local,600.00,22000,520,35,18000,1.22,27.27,1.15,2.36,4.10
+2024-01-09,Meta Ads,Messenger Ads,Messenger,700.00,28000,650,38,22000,1.27,25.00,1.08,2.32,3.80
+2024-01-09,Google Ads,App Campaigns,App,1100.00,55000,980,65,45000,1.22,20.00,1.12,1.78,3.55
+2024-01-10,Meta Ads,Instagram Reels,Reels,1200.00,52000,1100,72,42000,1.24,23.08,1.09,2.12,4.25
+2024-01-10,Google Ads,Discovery Ads,Discovery,950.00,48000,850,58,38000,1.26,19.79,1.12,1.77,3.85
