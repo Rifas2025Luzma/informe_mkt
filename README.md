@@ -1,16 +1,20 @@
-# Dashboard de Marketing Digital
+# Dashboard de Marketing Digital - Versión Estática
 
-Una aplicación web completa desarrollada en PHP para procesar y visualizar datos publicitarios de Google Sheets, generando un dashboard interactivo con métricas detalladas y gráficos profesionales.
+Una aplicación web estática desarrollada con HTML5, CSS3 y JavaScript vanilla para procesar y visualizar datos publicitarios de Google Sheets, generando un dashboard interactivo con métricas detalladas y gráficos profesionales.
 
 ## 🚀 Características
 
-- **Carga de datos flexible**: Soporte para Google Sheets públicos y archivos CSV
-- **Dashboard interactivo**: Métricas consolidadas con visualizaciones profesionales
-- **Análisis detallado**: Tabla filtrable y ordenable con datos granulares por campaña
-- **Gráficos dinámicos**: Visualizaciones interactivas usando Chart.js
-- **Diseño responsive**: Optimizado para dispositivos móviles y desktop
-- **Exportación de datos**: Funcionalidad de exportación a CSV
-- **Interfaz moderna**: Diseño profesional con animaciones suaves
+- **✅ Compatible con GitHub Pages**: Versión 100% estática sin dependencias de servidor
+- **📊 Carga de datos flexible**: Soporte para Google Sheets públicos y archivos CSV
+- **📈 Dashboard interactivo**: Métricas consolidadas con visualizaciones profesionales
+- **🔍 Análisis detallado**: Tabla filtrable y ordenable con datos granulares por campaña
+- **📱 Diseño responsive**: Optimizado para dispositivos móviles y desktop
+- **⚡ Carga rápida**: Sin dependencias de servidor, carga instantánea
+- **🎨 Interfaz moderna**: Diseño profesional con animaciones suaves
+
+## 🌐 Demo en Vivo
+
+Visita la demo: [https://tu-usuario.github.io/marketing-dashboard](https://tu-usuario.github.io/marketing-dashboard)
 
 ## 📊 Métricas Incluidas
 
@@ -23,75 +27,64 @@ Una aplicación web completa desarrollada en PHP para procesar y visualizar dato
 
 ### Análisis Detallado
 - Vista granular por campaña
-- Filtros por fecha, plataforma y tipo
+- Filtros por plataforma y búsqueda en tiempo real
 - Métricas: alcance, frecuencia, CPM, CPC, CTR, ROAS
 - Ordenamiento dinámico por columnas
+- Exportación a CSV
 
-## 🛠️ Requisitos Técnicos
+## 🛠️ Tecnologías
 
-- **PHP**: 7.4 o superior
-- **Servidor web**: Apache/Nginx con soporte PHP
-- **Navegadores**: Chrome, Firefox, Safari, Edge (versiones modernas)
-- **Conexión a internet**: Para cargar datos de Google Sheets y librerías CDN
+- **HTML5**: Estructura semántica moderna
+- **CSS3**: Grid, Flexbox, animaciones CSS
+- **JavaScript ES6+**: Vanilla JavaScript sin frameworks
+- **Chart.js**: Gráficos interactivos
+- **PapaParse**: Procesamiento de CSV
+- **Font Awesome**: Iconografía profesional
 
-## 📋 Estructura de Datos Requerida
+## 📋 Estructura de Datos
 
-Tu Google Sheets debe contener las siguientes columnas (en este orden):
+Tu Google Sheets debe contener estas columnas:
 
-| Columna | Tipo | Descripción |
-|---------|------|-------------|
-| fecha | YYYY-MM-DD | Fecha de la campaña |
-| plataforma | Texto | "Meta Ads" o "Google Ads" |
-| nombre_campana | Texto | Nombre de la campaña |
-| tipo_campana | Texto | Tipo de campaña |
-| inversion | Número | Inversión en USD |
-| impresiones | Número | Número de impresiones |
-| clicks | Número | Número de clicks |
-| conversiones | Número | Número de conversiones |
-| alcance | Número | Alcance de la campaña |
-| frecuencia | Número | Frecuencia promedio |
-| cpm | Número | Costo por mil impresiones |
-| cpc | Número | Costo por click |
-| ctr | Número | Click-through rate (%) |
-| roas | Número | Return on ad spend |
+| Columna | Tipo | Ejemplo |
+|---------|------|---------|
+| fecha | YYYY-MM-DD | 2024-01-15 |
+| plataforma | Texto | Meta Ads / Google Ads |
+| nombre_campana | Texto | Campaña Navidad 2024 |
+| tipo_campana | Texto | Conversiones |
+| inversion | Número | 1500.00 |
+| impresiones | Número | 45000 |
+| clicks | Número | 1200 |
+| conversiones | Número | 85 |
+| alcance | Número | 35000 |
+| frecuencia | Número | 1.30 |
+| cpm | Número | 33.33 |
+| cpc | Número | 1.25 |
+| ctr | Número | 2.67 |
+| roas | Número | 4.25 |
 
-## 🚀 Instalación
+## 🚀 Despliegue en GitHub Pages
 
-### Opción 1: Hosting PHP Tradicional
+### Opción 1: Fork este repositorio
 
-1. **Descarga los archivos**
-   ```bash
-   git clone [URL_DEL_REPOSITORIO]
-   cd marketing-dashboard
-   ```
+1. **Fork** este repositorio
+2. Ve a **Settings** → **Pages**
+3. Selecciona **Deploy from a branch**
+4. Elige **main** branch
+5. ¡Listo! Tu dashboard estará en `https://tu-usuario.github.io/marketing-dashboard`
 
-2. **Sube los archivos a tu servidor**
-   - Sube todos los archivos a la carpeta raíz de tu hosting
-   - Asegúrate de que el servidor tenga PHP 7.4+ habilitado
+### Opción 2: Crear nuevo repositorio
 
-3. **Configura permisos**
-   ```bash
-   chmod 755 includes/
-   chmod 644 includes/*.php
-   chmod 755 assets/
-   ```
+1. **Crea un nuevo repositorio** en GitHub
+2. **Clona** este código a tu repositorio
+3. **Habilita GitHub Pages** en Settings → Pages
+4. **Selecciona la rama main** como fuente
 
-4. **Accede a la aplicación**
-   - Visita `http://tu-dominio.com/index.php`
-
-### Opción 2: Servidor Local (XAMPP/WAMP/MAMP)
-
-1. **Instala XAMPP/WAMP/MAMP**
-   - Descarga e instala según tu sistema operativo
-
-2. **Copia los archivos**
-   ```bash
-   cp -r marketing-dashboard/ /path/to/xampp/htdocs/
-   ```
-
-3. **Inicia el servidor**
-   - Inicia Apache desde el panel de control
-   - Visita `http://localhost/marketing-dashboard/`
+```bash
+git clone https://github.com/tu-usuario/marketing-dashboard.git
+cd marketing-dashboard
+git remote set-url origin https://github.com/tu-usuario/tu-repo.git
+git push -u origin main
+```
 
 ## 📖 Guía de Uso
 
@@ -100,157 +93,137 @@ Tu Google Sheets debe contener las siguientes columnas (en este orden):
 1. **Crea un Google Sheets** con la estructura de datos requerida
 2. **Haz el documento público**:
    - Clic en "Compartir" → "Cambiar a cualquier persona con el enlace"
-   - Asegúrate de que tenga permisos de "Lector"
+   - Permisos de "Lector"
 3. **Copia la URL** del documento
 
-### 2. Cargar Datos
+### 2. Usar el Dashboard
 
-1. **Desde Google Sheets**:
-   - Pega la URL en el campo correspondiente
-   - Clic en "Procesar Datos"
-
-2. **Desde archivo CSV**:
-   - Selecciona tu archivo CSV local
-   - Clic en "Procesar Datos"
+1. **Visita tu GitHub Pages** URL
+2. **Opción A**: Pega la URL de Google Sheets y clic en "Procesar Datos"
+3. **Opción B**: Sube un archivo CSV local
+4. **Opción C**: Clic en "Cargar Datos de Demo" para probar
 
 ### 3. Analizar Resultados
 
-1. **Dashboard Principal**: Revisa las métricas consolidadas
-2. **Gráficos**: Analiza la distribución por plataforma y tendencias temporales
-3. **Tabla Detallada**: Filtra y ordena los datos según tus necesidades
-4. **Exportar**: Descarga los datos filtrados en formato CSV
+- **Dashboard**: Revisa métricas consolidadas
+- **Gráficos**: Analiza distribución y tendencias
+- **Tabla**: Filtra, ordena y busca campañas específicas
+- **Exportar**: Descarga datos filtrados en CSV
 
-## 🎨 Personalización
+## 🔧 Personalización
 
-### Colores y Estilos
+### Cambiar Colores
 
-Edita `assets/css/style.css` para personalizar:
+Edita las variables CSS en `assets/css/style.css`:
 
 ```css
 :root {
-    --primary-color: #2563eb;    /* Color principal */
-    --secondary-color: #64748b;  /* Color secundario */
-    --success-color: #10b981;    /* Color de éxito */
-    /* ... más variables */
+    --primary-color: #2563eb;    /* Azul principal */
+    --secondary-color: #64748b;  /* Gris secundario */
+    --success-color: #10b981;    /* Verde éxito */
+    /* Personaliza según tu marca */
 }
 ```
 
-### Métricas Adicionales
+### Agregar Nuevas Métricas
 
-Para agregar nuevas métricas, edita `includes/functions.php`:
+Modifica la función `updateMetrics()` en `assets/js/app.js`:
 
-```php
-function calculate_metrics($data) {
-    // Agregar nuevos cálculos aquí
-    $metrics['nueva_metrica'] = calcular_nueva_metrica($data);
-    return $metrics;
+```javascript
+function updateMetrics(data) {
+    // Agregar cálculos personalizados
+    const customMetric = calculateCustomMetric(data);
+    // Actualizar UI
 }
 ```
 
-## 🔧 Solución de Problemas
+### Modificar Datos de Demo
+
+Edita el array `DEMO_DATA` en `assets/js/app.js` con tus propios datos de ejemplo.
+
+## 📱 Características Móviles
+
+- **Responsive Design**: Se adapta a cualquier pantalla
+- **Touch Friendly**: Optimizado para interacciones táctiles
+- **Gráficos Móviles**: Charts responsivos automáticamente
+- **Navegación Intuitiva**: UX optimizada para móviles
+
+## 🔒 Privacidad y Seguridad
+
+- **Sin servidor**: Todo se procesa en el navegador del usuario
+- **No se almacenan datos**: Los datos no se guardan en ningún servidor
+- **CORS Proxy**: Usa AllOrigins para acceder a Google Sheets de forma segura
+- **Solo lectura**: No se modifican los documentos originales
+
+## 🐛 Solución de Problemas
 
 ### Error: "No se pudieron obtener datos"
 
-1. **Verifica la URL**: Asegúrate de que sea una URL válida de Google Sheets
-2. **Permisos**: El documento debe ser público con permisos de lectura
-3. **Formato**: Verifica que las columnas coincidan con la estructura requerida
+1. **Verifica la URL**: Debe ser una URL válida de Google Sheets
+2. **Documento público**: Asegúrate de que tenga permisos de lectura pública
+3. **Formato correcto**: Verifica que las columnas coincidan exactamente
 
 ### Error: "Archivo CSV inválido"
 
-1. **Codificación**: Asegúrate de que el CSV esté en UTF-8
-2. **Delimitadores**: Usa comas (,) como separadores
-3. **Encabezados**: La primera fila debe contener los nombres de columnas exactos
+1. **Codificación UTF-8**: Guarda el CSV en UTF-8
+2. **Separadores**: Usa comas (,) como delimitadores
+3. **Encabezados**: Primera fila debe tener nombres exactos de columnas
 
-### Problemas de Rendimiento
+### Gráficos no se muestran
 
-1. **Límite de datos**: Para archivos muy grandes (>1000 filas), considera dividir los datos
-2. **Memoria PHP**: Aumenta `memory_limit` en php.ini si es necesario
-3. **Timeout**: Ajusta `max_execution_time` para archivos grandes
+1. **Datos válidos**: Verifica que hay datos numéricos
+2. **JavaScript habilitado**: Asegúrate de que JS esté activo
+3. **Consola del navegador**: Revisa errores en F12
 
-## 📱 Compatibilidad Móvil
-
-La aplicación está completamente optimizada para dispositivos móviles:
-
-- **Diseño responsive**: Se adapta automáticamente al tamaño de pantalla
-- **Navegación táctil**: Optimizada para interacciones táctiles
-- **Gráficos móviles**: Los gráficos se redimensionan automáticamente
-- **Tablas scrollables**: Las tablas grandes son navegables horizontalmente
-
-## 🔒 Seguridad
-
-- **Validación de entrada**: Todos los datos son validados y sanitizados
-- **Protección XSS**: Salida HTML escapada automáticamente
-- **Límites de archivo**: Restricciones en tamaño y tipo de archivos
-- **Sin base de datos**: No se almacenan datos sensibles
-
-## 🚀 Despliegue en Producción
-
-### Hosting Compartido
-
-1. **Sube archivos** via FTP/cPanel
-2. **Configura dominio** para apuntar a index.php
-3. **Verifica PHP** versión y extensiones
-
-### VPS/Servidor Dedicado
-
-```bash
-# Instalar dependencias
-sudo apt update
-sudo apt install apache2 php libapache2-mod-php
-
-# Configurar virtual host
-sudo nano /etc/apache2/sites-available/dashboard.conf
-
-# Habilitar sitio
-sudo a2ensite dashboard.conf
-sudo systemctl reload apache2
-```
-
-## 📈 Optimización
+## 🚀 Optimización
 
 ### Rendimiento
+- **Lazy Loading**: Los gráficos se cargan solo cuando hay datos
+- **Debounce**: Búsqueda optimizada con retraso
+- **Animaciones CSS**: Transiciones suaves sin JavaScript
 
-- **Cache**: Implementa cache de archivos para datos frecuentes
-- **CDN**: Usa CDN para librerías externas
-- **Compresión**: Habilita gzip en el servidor
-- **Minificación**: Minifica CSS y JS para producción
-
-### SEO (si es público)
-
-- **Meta tags**: Agrega meta descripción y keywords
-- **Schema markup**: Implementa datos estructurados
-- **Sitemap**: Genera sitemap.xml si tienes múltiples páginas
+### SEO (Opcional)
+```html
+<!-- Agregar en <head> para SEO -->
+<meta name="description" content="Dashboard de Marketing Digital - Análisis de campañas publicitarias">
+<meta name="keywords" content="marketing, dashboard, analytics, publicidad">
+```
 
 ## 🤝 Contribución
 
 1. **Fork** el repositorio
-2. **Crea** una rama para tu feature (`git checkout -b feature/nueva-funcionalidad`)
-3. **Commit** tus cambios (`git commit -am 'Agregar nueva funcionalidad'`)
-4. **Push** a la rama (`git push origin feature/nueva-funcionalidad`)
-5. **Crea** un Pull Request
+2. **Crea** una rama: `git checkout -b feature/nueva-funcionalidad`
+3. **Commit**: `git commit -am 'Agregar nueva funcionalidad'`
+4. **Push**: `git push origin feature/nueva-funcionalidad`
+5. **Pull Request**: Crea un PR con descripción detallada
 
 ## 📄 Licencia
 
-Este proyecto está bajo la Licencia MIT. Ver `LICENSE` para más detalles.
+MIT License - Libre para uso personal y comercial.
 
 ## 📞 Soporte
 
-Para soporte técnico o preguntas:
+- **Issues**: [GitHub Issues](https://github.com/tu-usuario/marketing-dashboard/issues)
+- **Documentación**: Este README
+- **Demo**: Datos de ejemplo incluidos
 
-- **Issues**: Crea un issue en GitHub
-- **Email**: [tu-email@ejemplo.com]
-- **Documentación**: Consulta este README
+## 🔄 Actualizaciones
 
-## 🔄 Changelog
+### v2.0.0 (Actual)
+- ✅ Versión estática para GitHub Pages
+- ✅ Sin dependencias de servidor
+- ✅ Procesamiento 100% client-side
+- ✅ CORS proxy para Google Sheets
+- ✅ Datos de demo integrados
 
-### v1.0.0 (2024-01-XX)
-- ✅ Lanzamiento inicial
-- ✅ Soporte para Google Sheets y CSV
-- ✅ Dashboard interactivo completo
-- ✅ Gráficos con Chart.js
-- ✅ Diseño responsive
-- ✅ Funcionalidad de exportación
+### Próximas versiones
+- 🔄 Más tipos de gráficos
+- 🔄 Filtros avanzados por fecha
+- 🔄 Comparativas entre períodos
+- 🔄 Exportación a PDF
 
 ---
 
-**Desarrollado con ❤️ para optimizar tus campañas de marketing digital**
+**🎉 ¡Tu dashboard está listo para GitHub Pages!**
+
+Simplemente haz push a tu repositorio y habilita GitHub Pages para tener tu dashboard funcionando en minutos.

@@ -127,6 +127,20 @@ body {
     font-weight: 500;
 }
 
+/* Demo Section */
+.demo-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.demo-section small {
+    display: block;
+    margin-top: 0.5rem;
+    color: var(--text-secondary);
+}
+
 /* Buttons */
 .btn {
     padding: 0.75rem 1.5rem;
@@ -181,6 +195,12 @@ body {
     background: #fef2f2;
     color: #991b1b;
     border: 1px solid #fecaca;
+}
+
+.alert-info {
+    background: #dbeafe;
+    color: #1e40af;
+    border: 1px solid #93c5fd;
 }
 
 /* Metrics Grid */
